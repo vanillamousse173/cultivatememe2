@@ -1,0 +1,173 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+body{
+	display: flex; /*為了使footer置底*/
+	flex-direction: column; /*由上至下排列*/
+	min-height:100vh;
+	/*可大於但不可小於 整個瀏覽器可視範圍*/
+	position: relative;
+	margin:0;
+	background:#ffc349;
+	font-family: 'Noto Sans TC';
+	}
+
+::-webkit-scrollbar {
+	display:none
+}
+
+::-moz-selection{
+	color: #fff;
+	background: #fe5656;
+}
+
+::selection{
+	color: #fff;
+	background: #fe5656;
+}
+
+/*load*/
+#load{
+    background:#fe5656;
+    position:fixed;
+    z-index:99999;
+    top:100%;
+    left:0%;
+    width:100%;
+    height:100%;
+    -webkit-animation: slide 2s 0.3s backwards;
+    animation: slide 2s 0.3s backwards;
+}
+
+@keyframes slide {
+    from {top:0%;}
+    to {top:100%;}
+}
+
+#loader {
+    margin:auto;
+	overflow: hidden;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin-top:15%;
+    -webkit-animation: spin 1s 0.2s ease-in-out infinite;
+    animation: spin 1s 0.2s ease-in-out infinite;
+}
+
+@keyframes spin {
+    from {transform: rotate(0deg); }
+    to {transform: rotate(360deg); }
+}
+
+#loader img{
+	width: 100%;
+}
+
+header{
+	width: 100%;
+	top: 0;
+	box-sizing: border-box;
+	background: #ffc349;
+}
+
+
+#logo{
+	float: left;
+	height: 120px;
+	display: inline-block;
+	box-sizing:border-box;
+	padding-left: 50px;
+}
+
+#logo img{
+	height: 100%;
+}
+	
+
+/* nav bar */
+nav{
+	box-sizing: border-box;
+	display: inline-block;
+	float: left;
+	min-width: 600px;
+	padding-left: 20px;
+	list-style: none;
+	font-size: 24pt;
+	font-family: 'Permanent Marker';
+}
+
+
+nav ul{
+	margin: 0; 
+	padding: 0;	
+}
+
+nav li{
+	display: inline-block; /*去除條列式*/
+}
+
+nav li a{
+	display:block;
+	width: 150px;
+	line-height: 100px;
+	box-sizing: border-box;
+	padding:10px 20px;
+	color: #000;
+	text-decoration: none;  /*將底線去除*/
+}
+
+nav li a:hover{
+	color:#fe5656;
+}
+
+/*.clearfix:after{ 
+	content: ""; 
+	display: block; 
+	clear: both;
+}*/
+
+/*aside*/
+aside{
+	position: absolute;
+	right: 60px;
+	top: 35px;
+}
+
+.share{
+	width: 50px;
+	height: 50px;
+	background: url(../img/fb.png) no-repeat;
+	background-position: -50px,0px;
+	background-size: 200%;
+}
+
+.share:hover{
+	background:url(../img/fb.png) no-repeat;
+	background-position: 0px,0px;
+	background-size: 200%;
+}
+
+/*section*/
+section{
+	flex-grow:1;
+	/*將內容設置flex-grow:1，使其能夠彈性伸展*/
+	display: block;
+}
+
+/*footer*/
+footer{	
+	display: block;
+	clear: both;
+	position: absolute;	
+	bottom: 0;
+	width: 100%;
+	padding: 10px 0;
+	text-align: center;
+	background:#fe5656;
+	font-size: 10pt;
+}

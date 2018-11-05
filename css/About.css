@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background: #ffde9e;
+	}
+
+/*section*/
+section{
+	position: relative;
+	width: 80%;
+	margin: 50px auto ;
+}
+
+.left, .right{
+	box-sizing: border-box;
+	float: left;
+	padding: 10px 0px;
+}
+
+.right{
+	width: 65%;
+	text-align:left;
+	color: #000;
+}
+
+.right p{
+	font-size: 14pt;
+	margin:0 0 20px;
+	padding: 6pt 20px ;
+}
+
+.right h3{
+	font-size: 16pt;
+	padding: 6pt 0;
+	margin:0;
+}
+
+.right h1{
+	color: #fe5656;
+	font-size: 28pt;
+	padding: 14pt 0 ;
+	margin:0;
+}
+
+article{ 
+	clear:both; 
+	color:#000; 
+	background: #fff;
+	border-radius: 10px;
+	border:5px #ffc349 solid;
+	padding:10px 30px 20px; 
+	margin: 0 0 40px 40px;
+	box-shadow: 2px 2px 8px #999;	
+}
+
+
+article a{
+	text-decoration: none;
+	color:#fe5656;
+}
+
+article a:hover{
+	border-bottom: dotted 2px #fe5656;
+}
+
+
+.left{
+	width: 35%;
+	height: 1000px;
+	background: url("../img/stretchy cat.gif");
+/*	background-repeat:  repeat-y;*/
+	text-align: center;
+}
+
+
+

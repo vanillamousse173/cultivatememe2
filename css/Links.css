@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*section*/
+section{
+	position: relative;
+	width: 80%;
+	margin: 50px auto;
+}
+
+.left, .right{
+	box-sizing: border-box;
+	float: right;
+	padding: 10px;
+}
+
+.right{
+	width: 50%;
+	text-align: center;
+}
+
+.right img{
+	width: 400px;
+	border-radius: 50%;
+}
+
+.left{
+	width: 50%;
+	text-align:center;
+}
+
+.right p, .right h1{
+	padding: 0;
+	margin: 0;
+}
+
+.right h1{
+	font-size: 28px;
+	padding-bottom: 20px;
+}
+
+.puz{
+	width: 460px;
+	margin: auto;
+	float: left;
+}
+
+.tip{
+	display: inline-block;
+	box-sizing: border-box;	
+	margin: 3px;
+	position: relative;
+}
+
+.tip img{
+	width: 50px;
+}	
+
+.tip .text{
+    visibility: hidden;
+    background-color: #fe5656;
+    box-sizing: border-box;
+    width: 150px;
+    color: #fff;
+    text-align: center;
+    font-size: 12pt;
+    border-radius: 5px;
+	padding: 5px 6px;
+    position: absolute;
+    z-index: 1000;
+    bottom: 110%;
+    left: 50%;
+    margin-left: -75px;
+}
+
+.tip:hover .text{
+    visibility: visible;
+    opacity: 1;
+}
+
+.tip .text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #fe5656 transparent transparent transparent;
+}

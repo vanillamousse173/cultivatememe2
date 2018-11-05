@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>培養meme-About</title>
+	<link href="css/all.css" rel="stylesheet" type="text/css">
+	<link href="css/Character.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="img/page.ico">
+	<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
+	<script>
+	$(function(){
+    var $li = $('ul.tab-title li');
+        $($li. eq(0) .addClass('active').find('a').attr('href')).siblings('.tab-inner').hide();
+    
+        $li.click(function(){
+            $($(this).find('a'). attr ('href')).show().siblings ('.tab-inner').hide();
+            $(this).addClass('active'). siblings ('.active').removeClass('active');
+        });
+    });
+	</script>
+</head>
+<body>
+	<div id="load"><div id="loader"><img src="img/logo.jpg" alt="logo"></div></div>
+	<header>
+		<div id="logo">
+			<a href="index.html"><img src="img/logo.png"/></a>		
+		</div>
+  
+    	<nav>
+      		<ul>
+        	<li><a href="About.html">About</a></li>
+        	<li><a href="Meme.html">Memes</a></li>
+       		<li><a href="Works.html">Works</a></li>
+       		<li><a href="Links.html">Links</a></li>
+       		<li><a href="Character.html">Character</a></li>
+       		</ul>
+       	</nav>
+    </header>
+
+    <aside>
+        <a href="https://www.facebook.com/%E5%85%92%E8%8A%8B%E5%9C%93%E5%A4%AA%E9%83%8E-1999599493650425/" target="_blank"><div class="share"></div>
+    	</a>
+	</aside>
+	
+	<section>
+		<div class="left">
+			<a href="index.html"><img src="img/logo.jpg" alt="bg1"></a>
+		</div>
+		<div class="right">
+			<div id="tab-demo">
+				<ul class="tab-title">
+					<li><a href="#tab05"><img src="img/logo.jpg" alt="red riding cool"></a></li>
+					<li><a href="#tab01"><img src="img/momo.jpg" alt="momo"></a></li>
+					<li><a href="#tab02"><img src="img/clam.jpg" alt="clam"></a></li>
+					<li><a href="#tab03"><img src="img/mushroom.jpg" alt="mushroom"></a></li>
+					<li><a href="#tab04"><img src="img/RRC.jpg" alt="red riding cool"></a></li>
+				</ul>
+				<div id="tab05" class="tab-inner">
+					<h3>培養meme</h3>
+					<p>在培養meme的實驗室裡，毛毛蔥、蛤蜊、香菇、小紅貓過著開心又愉悅的生活。「看看這個，這個meme，如此美麗。」毛毛蔥說。<br>「ㄅ錯。」香菇說，今天的它真是非常和善。<br>「w」就連蛤蜊也熱烈地附和著。<br>「我要讓大家看見這個meme，告訴大家它有多麼令人感動。」毛毛蔥大聲地宣示。角落的小紅貓聽到後喵嗚一聲，牠的感想暗示了這一切的由來。</p>
+				</div>
+				<div id="tab01" class="tab-inner">
+					<h3>毛毛蔥</h3>
+					<p>正身不明，但據本人表示它是一根柔軟度很好的蔥，<br>喜歡蠕動，很嚮往成為翠玉白菜，<br>最近在地球貓貓教和飛天義大利麵神教之間掙扎。<br><br>Bonus：昨天晚餐是麻辣燙。</p>
+				</div>
+				<div id="tab02" class="tab-inner">
+					<h3>蛤蜊</h3>
+					<p>一個普通的蛤蜊，不太確定有沒有熟，<br>無口（物理），但能像響板一樣發出聲音。<br>很喜歡雙關語但總是想不出什麼好梗。<br><br>Bonus：小名是蜊蜊安。</p>
+				</div>
+				<div id="tab03" class="tab-inner">
+					<h3>香菇</h3>
+					<p>長得像吐司但實際上是切片蘑菇（加在咖哩裡的那種），<br>笑臉迎人但是出口成髒，<br>因為說話會分解所以只能講一些簡單的字。<br><br>Bonus：最近滿喜歡看日綜，覺得日本人都是天才。</p>
+				</div>
+				<div id="tab04" class="tab-inner">
+					<h3>小紅貓</h3>
+					<p>是個從美麗的嘉德麗雅蘭中blah地誕生的哲學家，<br>因為是隻方形貓，無法像一般貓貓一樣可以隨意變形，<br>因此有時會感受到前所未有的孤獨。<br><br>Bonus：昨天下午是牠第5823次進去盒子時被卡住。</p>
+				</div>
+			</div>
+		</div>
+		</section>	
+
+	<footer>
+		&copy; All Rights Reserved. 
+	</footer>
+</body>
+</html>

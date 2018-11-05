@@ -1,0 +1,235 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+body{
+	margin: 0;
+	padding: 0;
+	background:#565656;
+	font-family: 'Noto Sans TC';
+	}
+
+
+::-moz-selection{
+	color: #fff;
+	background: #fe5656;
+}
+
+::selection{
+	color: #fff;
+	background: #fe5656;
+}
+
+/*scrollbar*/
+
+/*定義滾動條寬高及背景
+ 寬高分别對應横豎滚動條的尺寸*/
+::-webkit-scrollbar{
+    width:10px;
+    height:10px;
+    /*background-color:#F5F5F5;*/
+	}
+
+/*定義滾動條軌道
+ 內陰影+圓角*/
+::-webkit-scrollbar-track{
+	/*-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);*/
+    border-radius:5px;
+    background-color:#F5F5F5;
+	}
+
+/*定義滑塊
+ 内陰影+圓角*/
+::-webkit-scrollbar-thumb
+	{
+    border-radius:5px;
+	/*-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3);*/
+    background-color:#fe5656;
+	}
+
+/*section*/
+section{
+	position: relative;
+	background-color: #FFF;
+	width: 80%;
+	height: 600px;
+	padding: 40px;
+	margin: 50px auto;
+	border-radius: 20px;
+	border: 10px #ffc349 solid;
+}
+
+/*load*/
+#load{
+    background:#ffc349;
+    position:fixed;
+    z-index:99999;
+    top:0%;
+    left:0%;
+    width:100%;
+    height:100%;
+    -webkit-animation: slide 3s 0.3s reverse forwards;
+    animation: slide 3s 0.3s reverse forwards;
+}
+
+@keyframes slide {
+    from {left:100%;}
+    to {left:0%;}
+}
+
+#loader {
+    margin:auto;
+	overflow: hidden;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin-top:15%;
+    -webkit-animation: spin 1s 0.2s ease-in-out infinite;
+    animation: spin 1s 0.2s ease-in-out infinite;
+}
+
+@keyframes spin {
+    from {transform: rotate(0deg); }
+    to {transform: rotate(360deg); }
+}
+
+#loader img{
+	width: 100%;
+}
+
+/*close*/
+.close{
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	width: 50px;
+	height: 50px;
+	background: url(../img/close.png) no-repeat;
+	background-position: -50px,0px;
+	background-size: 200%;
+}
+
+.close:hover{
+	background: url(../img/close.png) no-repeat;
+	background-position: 0px,0px;
+	background-size: 200%;
+}
+
+.left, .right{
+	width: 50%;
+	box-sizing: border-box;
+	float: left;
+	padding: 10px 25px;
+}
+
+.left img{
+	width: 95%;
+	text-align: center;
+}
+
+.right{
+	margin: 10px 0px 20px;
+	height: 85%;
+	text-align:left;
+	color: #000;
+}
+
+article{
+	overflow: auto;
+	overflow-x: hidden;
+	height: 85%;
+/*	border-top: solid 5px #fe5656;
+	border-bottom: solid 5px #fe5656;*/
+	padding: 5px 10px;
+	scroll-behavior: smooth;
+}
+
+article p{
+	font-size: 12pt;
+	padding: 6pt 10px ;
+	margin: 0;
+	text-align: justify;
+}
+
+h1{
+	font-size: 28pt;
+	font-family: 'Permanent Marker';
+	padding:0 10px 10px;
+	margin: 0;
+	text-align: center;
+}
+
+h3{
+	font-size: 16pt;
+	color: #fe5656;
+	margin: 0px;
+	padding:10px;
+}
+
+.tag{
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.tag a{
+	text-decoration: none;
+	color: #000;
+	display: inline-block;
+	font-size: 12pt;
+	margin-right: 5px;
+	padding: 2px 5px;
+	border-radius: 5px;
+}
+
+.tag a:hover{
+	line-height: 16pt;
+	color: #fff;
+	background-color: #fe5656; 
+}
+
+.tooltip {
+    position: relative;
+    border-bottom: dotted 2px #fe5656;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: #fe5656;
+    width: 200px;
+    color: #fff;
+    text-align: justify;
+    font-size: 10pt;
+    border-radius: 5px;
+	padding: 5px 6px;
+    position: absolute;
+    z-index: 1000;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -20px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #fe5656 transparent transparent transparent;
+}
+
+.tooltip:hover{
+	color:#fe5656;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
