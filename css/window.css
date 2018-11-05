@@ -71,8 +71,8 @@ section{
     left:0%;
     width:100%;
     height:100%;
-    -webkit-animation: slide 3s 0.3s reverse forwards;
-    animation: slide 3s 0.3s reverse forwards;
+    -webkit-animation: slide 2s 0.3s reverse forwards;
+    animation: slide 2s 0.3s reverse forwards;
 }
 
 @keyframes slide {
