@@ -94,11 +94,11 @@ nav{
 	box-sizing: border-box;
 	display: inline-block;
 	float: left;
-	min-width: 900px;
 	padding-left: 20px;
 	list-style: none;
 	font-size: 24pt;
 	font-family: 'Permanent Marker';
+	margin-right: 100px;
 }
 
 
